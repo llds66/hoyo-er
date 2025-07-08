@@ -2,7 +2,7 @@
 import { onMounted, ref } from 'vue'
 
 const props = defineProps<
-  { bvid: string, videoData?: any }
+  { videoData?: any }
 >()
 console.log(props.videoData)
 
@@ -10,8 +10,6 @@ const imageLoaded = ref(false)
 const data = ref<any>(null)
 
 onMounted(async () => {
-  if (!props.bvid)
-    return
   data.value = props.videoData
 })
 
@@ -35,7 +33,12 @@ function formatTitle(title: string): string {
       <div class="skeleton-card" />
     </template>
     <template v-else>
-      <div v-if="data" class="box_warper cursor-pointer">
+      <a
+        v-if="data"
+        class="box_warper cursor-pointer"
+        :href="`https://www.bilibili.com/video/${data.bvid}`"
+        target="_blank"
+      >
         <div class="relative">
           <div
             v-if="!imageLoaded"
@@ -78,7 +81,7 @@ function formatTitle(title: string): string {
           </div>
           <div>{{ formatNumber(data.favorite) }}收藏</div>
         </div>
-      </div>
+      </a>
     </template>
   </div>
 </template>
