@@ -1,6 +1,6 @@
 [
   {
-    "id": 25,
+    "id": 64,
     "aid": 1705352105,
     "bvid": "BV1hT421v7yb",
     "title": "【自制动画】《独舞》一个人画了800小时",
@@ -8,15 +8,16 @@
     "copyright": 1,
     "owner_name": "GYAnimation",
     "owner_face": "https://hoyoer.csx.pw/img-proxy?url=https://i0.hdslb.com/bfs/face/87d4eb604d7d235eed158033d0181ad9d59850c7.jpg",
-    "view": 5903099,
-    "like_count": 1049321,
-    "coin": 472186,
-    "favorite": 341724,
+    "view": 5903675,
+    "like_count": 1049364,
+    "coin": 472203,
+    "favorite": 341747,
     "danmaku": 1613,
-    "updated_at": "2025-07-08 19:05:10"
+    "keywords": "[\"动画\",\"知更鸟\"]",
+    "updated_at": "2025-07-08 21:02:07"
   },
   {
-    "id": 26,
+    "id": 65,
     "aid": 486021486,
     "bvid": "BV1wT411t7HA",
     "title": "星穹铁道最浪漫的支线，没有之一！！！",
@@ -24,11 +25,12 @@
     "copyright": 1,
     "owner_name": "哦漏QAQ",
     "owner_face": "https://hoyoer.csx.pw/img-proxy?url=https://i0.hdslb.com/bfs/face/eeb1482e13d915fce15cda71b2d0c8a76d706fd2.jpg",
-    "view": 11649203,
-    "like_count": 753974,
-    "coin": 582040,
-    "favorite": 479135,
-    "danmaku": 16333,
-    "updated_at": "2025-07-08 19:05:10"
+    "view": 11649990,
+    "like_count": 753996,
+    "coin": 582065,
+    "favorite": 479152,
+    "danmaku": 16336,
+    "keywords": "[\"支线\",\"浪漫\"]",
+    "updated_at": "2025-07-08 21:02:07"
   }
 ]
