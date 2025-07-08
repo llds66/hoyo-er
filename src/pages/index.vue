@@ -41,7 +41,7 @@ async function getGameData(gameId: string, keyword: string) {
   <div class="box">
     <Search class="py-3 top-0 sticky z-10" @search="handleSearch" @empty="emptyEvent" />
     <div v-if="gameData?.length" class="biliData_grid">
-      <BiliData v-for="i in gameData" :key="i.id" :bvid="i.bvid" />
+      <BiliData v-for="i in gameData" :key="i.id" :bvid="i.bvid" :video-data="i" />
     </div>
     <div v-else class="text-sm text-stone-600 mt-40 flex-center gap-2 w-full">
       <div class="i-iconamoon-information-circle-duotone" />
