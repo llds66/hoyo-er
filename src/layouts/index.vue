@@ -7,11 +7,12 @@ const route = useRoute()
 </script>
 
 <template>
-  <div class="p-x-5 flex">
-    <ColomnNav />
+  <div class="font-mono p-x-5 flex">
+    <ColomnNav class="hidden fixed md:flex" />
     <AnimatePresence mode="wait">
       <motion.div
         :key="route.fullPath"
+        class="w-full md:pl-44"
         layout
         :initial="{ opacity: 0, y: -0 }"
         :animate="{ opacity: 1, y: 0 }"

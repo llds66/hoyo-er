@@ -1,16 +1,17 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 
+const router = useRouter()
+const route = useRoute()
 const nav = ref([
   { name: '导航项一', link: 'ys' },
   { name: '导航项二', link: 'bt' },
   { name: '导航项三', link: 'zzz' },
 ])
 
-const active = ref('ys')
+const active = ref(route.params.gameId) || ref('ys')
 
-const router = useRouter()
 function changeActive(link: string) {
   active.value = link
   router.push({ params: { gameId: link } })

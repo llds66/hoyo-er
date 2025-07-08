@@ -12,5 +12,6 @@ declare module 'vue' {
     ColomnNav: typeof import('./src/components/ColomnNav.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Search: typeof import('./src/components/Search.vue')['default']
   }
 }
