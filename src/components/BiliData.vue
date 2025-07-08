@@ -4,6 +4,9 @@ import { onMounted, ref } from 'vue'
 const props = defineProps<
   { bvid: string }
 >()
+
+const baseUrl = import.meta.env.VITE_API_BASE_URL
+
 const imageLoaded = ref(false)
 const data = ref<any>(null)
 onMounted(async () => {
@@ -11,7 +14,7 @@ onMounted(async () => {
     return
 
   try {
-    const res = await fetch(`http://localhost:3456/bvideo?bvid=${props.bvid}`)
+    const res = await fetch(`${baseUrl}/bvideo?bvid=${props.bvid}`)
     data.value = await res.json()
   }
   catch (error) {
@@ -34,7 +37,7 @@ function formatTitle(title: string): string {
 function formatImage(url: string): string {
   if (!url)
     return ''
-  return `http://localhost:3456/img-proxy?url=${encodeURIComponent(url)}`
+  return `${baseUrl}/img-proxy?url=${encodeURIComponent(url)}`
 }
 </script>
 

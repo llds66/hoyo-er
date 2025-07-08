@@ -1,8 +1,8 @@
 <script setup lang='ts'>
+import BiliData from '@C/BiliData.vue'
+import Search from '@C/Search.vue'
 import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import BiliData from '@/components/BiliData.vue'
-import Search from '@/components/Search.vue'
 
 const route = useRoute()
 const gameId = ref(route.params.gameId)
@@ -43,7 +43,8 @@ async function getGameData(gameId: string, keyword: string) {
     <div v-if="gameData?.length" class="biliData_grid">
       <BiliData v-for="i in gameData" :key="i.id" :bvid="i.bvid" />
     </div>
-    <div v-else class="text-sm mt-40 flex-center w-full">
+    <div v-else class="text-sm text-stone-600 mt-40 flex-center gap-2 w-full">
+      <div class="i-iconamoon-information-circle-duotone" />
       暂无数据
     </div>
   </div>

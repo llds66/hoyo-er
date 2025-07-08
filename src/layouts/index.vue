@@ -1,7 +1,7 @@
 <script setup lang='ts'>
+import ColomnNav from '@C/ColomnNav.vue'
 import { AnimatePresence, motion } from 'motion-v'
 import { useRoute } from 'vue-router'
-import ColomnNav from '@/components/ColomnNav.vue'
 
 const route = useRoute()
 </script>
