@@ -8,7 +8,7 @@ const app = new Hono()
 app.get('/:gameID', async (c) => {
   const db = await getDb()
   const id = c.req.param('gameID')
-  const bvList = await fetch(`https://test.csx.pw/bv/${id}`)
+  const bvList = await fetch(`https://hoyoer.csx.pw/bv/${id}`)
   let bvListData: any
 
   try {
