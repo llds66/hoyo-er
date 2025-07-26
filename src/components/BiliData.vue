@@ -4,7 +4,6 @@ import { onMounted, ref } from 'vue'
 const props = defineProps<
   { videoData?: any }
 >()
-console.log(props.videoData)
 
 const imageLoaded = ref(false)
 const data = ref<any>(null)
