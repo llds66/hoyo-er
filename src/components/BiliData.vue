@@ -52,15 +52,15 @@ function formatTitle(title: string): string {
           <div class="p-x-2 flex w-full bottom-2 justify-between absolute">
             <div class="flex-center gap-2">
               <img :src="data.owner_face" class="rounded-full w-6">
-              <div class="text-0.6rem text-stone-300 p-1.5 p-y-0.4 rounded-lg bg-stone-800/70">
+              <div class="text-0.6rem text-stone-50 p-1.5 p-y-0.4 rounded-lg bg-stone-800/70">
                 {{ data.owner_name }}
               </div>
             </div>
             <div class="flex-center gap-1">
-              <div class="text-0.6rem text-stone-300 rounded-lg bg-stone-800/70 md:p-1.5 md:p-y-0.4">
+              <div class="text-0.7rem text-stone-50 rounded-lg bg-stone-800/70 md:p-1.5 md:p-y-0.4">
                 {{ formatNumber(data.view) }}观看
               </div>
-              <div class="text-0.6rem text-stone-300 p-1.5 p-y-0.4 rounded-lg bg-stone-800/70">
+              <div class="text-0.7rem text-stone-50 p-1.5 p-y-0.4 rounded-lg bg-stone-800/70">
                 {{ formatNumber(data.danmaku) }}弹幕
               </div>
             </div>

@@ -29,9 +29,10 @@ function onEnter(event: KeyboardEvent) {
         @input="onInput"
         @keydown.enter="onEnter"
       >
-      <div class="p-3 flex-center right-16 top-0 absolute" @click="onSearchClick">
+      <div class="p-3 flex-center right-18 top-0 absolute" @click="onSearchClick">
         <div class="i-iconamoon-search-duotone text-stone-500 cursor-pointer hover:text-stone-600" />
       </div>
+      <div class="bg-stone-300 h-70% w-0.2 right-18 top-1.5 absolute" />
       <div class="p-3 flex-center right-8 top-0 absolute">
         <a
           target="_blank"
