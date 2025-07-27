@@ -4,7 +4,7 @@
 pnpm run dev
 ```
 
-更新生成请求
+更新生成请求(默认10s定时更新)
 - GET http://localhost:3000/ys
 - GET http://localhost:3000/bt
 - GET http://localhost:3000/zzz

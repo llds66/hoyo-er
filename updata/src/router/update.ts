@@ -9,10 +9,11 @@ app.get('/:gameID', async (c) => {
   const db = await getDb()
   const id = c.req.param('gameID')
   const bvList = await fetch(`https://hoyoer.csx.pw/bv/${id}`)
+  // console.log(bvList.ok)
   let bvListData: any
-
   try {
     bvListData = await bvList.json()
+    // console.log(bvListData)
   }
   catch (err) {
     return c.json({ code: 500, message: '远程 JSON 数据解析失败', err })
@@ -27,7 +28,7 @@ app.get('/:gameID', async (c) => {
   // 循环更新数据库中的数据
   for (const { bvid, keywords } of bvListData as any[]) {
     const data = await getBvData(bvid)
-
+    // console.log(data)
     if (!data || !data.aid)
       continue
 
