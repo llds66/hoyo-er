@@ -26,9 +26,9 @@ jobs:
 
       - name: 运行更新脚本
         run: |
-          pnpm exec tsx scripts/updateBvJson.ts ys
-          pnpm exec tsx scripts/updateBvJson.ts bt
-          pnpm exec tsx scripts/updateBvJson.ts zzz
+          npx tsx scripts/updateBvJson.ts ys
+          npx tsx scripts/updateBvJson.ts bt
+          npx tsx scripts/updateBvJson.ts zzz
 
       - name: 提交并推送更新的 JSON 文件
         run: |
