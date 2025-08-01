@@ -3,18 +3,3 @@
 </blockquote>
 
 米哈游游戏的二创优质视频
-
-## Update
-
-```bash
-cd updata
-```
-
-```bash
-pnpm run dev
-```
-
-获取数据库数据,导出最新json文件(默认10s定时更新)
-- GET http://localhost:3000/ys
-- GET http://localhost:3000/bt
-- GET http://localhost:3000/zzz
