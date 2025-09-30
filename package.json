@@ -8,8 +8,10 @@
   "repository": "https://github.com/llds66/uonvue-template",
   "scripts": {
     "dev": "vite",
+    "update:dev": "pnpm run update && vite",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
+    "update": "pnpm run update:ys && pnpm run update:bt && pnpm run update:zzz",
     "update:ys": "npx tsx scripts/updateBvJson.ts ys",
     "update:bt": "npx tsx scripts/updateBvJson.ts bt",
     "update:zzz": "npx tsx scripts/updateBvJson.ts zzz",
