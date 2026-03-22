@@ -3,7 +3,7 @@ import path from 'node:path'
 import { getBvData } from './getBvData'
 
 async function updateJson(id: string) {
-  const bvList = await fetch(`https://hy-bv-api.llds.me/bv/${id}`)
+  const bvList = await fetch(`https://hoyo-bv-api.changllds666.workers.dev/bv/${id}`)
   let bvListData: any
   try {
     bvListData = await bvList.json()
@@ -28,10 +28,10 @@ async function updateJson(id: string) {
       aid: data.aid,
       bvid: data.bvid,
       title: data.title,
-      pic: `https://hy-bv-api.llds.me/img-proxy?url=${data.pic}`,
+      pic: `https://hoyo-bv-api.changllds666.workers.dev/img-proxy?url=${data.pic}`,
       copyright: data.copyright,
       owner_name: data.owner.name,
-      owner_face: `https://hy-bv-api.llds.me/img-proxy?url=${data.owner.face}`,
+      owner_face: `https://hoyo-bv-api.changllds666.workers.dev/img-proxy?url=${data.owner.face}`,
       view: data.count.view,
       like_count: data.count.like,
       coin: data.count.coin,
